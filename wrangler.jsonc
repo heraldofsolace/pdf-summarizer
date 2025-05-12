@@ -16,6 +16,22 @@
 	},
 	"observability": {
 		"enabled": true
+	},
+	"r2_buckets": [
+		{
+		  "binding": "MY_BUCKET",
+		  "bucket_name": "pdfs"
+		}
+	],
+	"queues": {
+		"consumers": [
+			{
+				"queue": "pdf-summarizer"
+			}
+		]
+  	},
+	"ai": {
+		"binding": "AI"
 	}
 	/**
 	 * Smart Placement
